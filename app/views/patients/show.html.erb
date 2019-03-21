@@ -1,6 +1,6 @@
 <h1>Appointment Details</h1>
 
-<p>Date: <%= self.appointment.appointment_datetime.strftime("%B %-d, %Y") %></p>
+<p>Date: <%= self.appointment_datetime.strftime("%B %-d, %Y") %></p>
 <p>Time: <%= @appointment.time %></p>
 <p>Doctor: <%= link_to @appointment.doctor_name, doctor_path(@appointment.doctor)%> </p>
 <p>Patient: <%= link_to @appointment.patient_name, patient_path(@appointment.patient) %></p>
