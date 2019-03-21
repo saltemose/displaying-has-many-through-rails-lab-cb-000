@@ -12,4 +12,3 @@
 <p> <% @patient.appointments.each do |appt| %>
   <li>Doctor: <%= link_to appt.patient_name, patient_path(appt.patient)%></li>
 <%end%></p>
-<p>Patient: <%= link_to @patient.appointment.patient_name, patient_path(@appointment.patient) %></p>
