@@ -1,4 +1,4 @@
-<h1>Appointment Details for @patient.name</h1>
+<h1>Appointment Details for <%= @patient.name %></h1>
 
 <p>Date: <%= @appointment.appointment_datetime.strftime("%B %-d, %Y") %></p>
 <p>Time: <%= @appointment.time %></p>
