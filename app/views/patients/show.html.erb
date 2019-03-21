@@ -1,9 +1,9 @@
 <h1>Appointment Details for <%= @patient.name %></h1>
 
-<p>Date: <% @patient.appointments.each do |appt| %>
+<p> <% @patient.appointments.each do |appt| %>
   <li>Date: <%= appt.date %></li>
 <%end%></p>
-<p>Time: <% @patient.appointments.each do |appt| %>
+<p> <% @patient.appointments.each do |appt| %>
   <li>Time: <%= appt.time %></li>
 <%end%></p>
 <p>Doctor: <%= link_to @appointment.doctor_name, doctor_path(@appointment.doctor)%> </p>
