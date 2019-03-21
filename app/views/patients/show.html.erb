@@ -10,7 +10,7 @@
   <li>Doctor: <%= link_to @patient.appt.doctor_name, doctor_path(@appointment.doctor)%></li>
 <%end%></p>
 <p> <% @patient.appointments.each do |appt| %>
-  <li>Patient: <%= appt.time %></li>
+  <li>Patient: <%= link_to @patient.appt.patient_name, patient_path(@appointment.patient) %></li>
 <%end%></p>
 <p>Doctor: <%= link_to @patient.appointment.doctor_name, doctor_path(@appointment.doctor)%> </p>
 <p>Patient: <%= link_to @patient.appointment.patient_name, patient_path(@appointment.patient) %></p>
