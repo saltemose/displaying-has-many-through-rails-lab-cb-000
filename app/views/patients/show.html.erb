@@ -10,5 +10,5 @@
   <li>Doctor: <%= link_to appt.doctor_name, doctor_path(appt.doctor)%></li>
 <%end%></p>
 <p> <% @patient.appointments.each do |appt| %>
-  <li>Doctor: <%= link_to appt.patient_name, patient_path(appt.patient)%></li>
+  <li>Patient: <%= link_to appt.patient_name, patient_path(appt.patient)%></li>
 <%end%></p>
