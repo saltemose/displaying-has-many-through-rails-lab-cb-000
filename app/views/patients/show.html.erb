@@ -1,8 +1,14 @@
 <h1>Appointment Details for <%= @patient.name %></h1>
 
-<p> <% @patient.appointments.each do |appt| %>
+<ul>
+
+<% @patient.appointments.each do |appt| %>
   <li>Date and Time: <%= appt.date %></li>
-<%end%></p>
+<%end%>
+
+</ul>
+
+
 <p> <% @patient.appointments.each do |appt| %>
   <li>Time: <%= appt.time %></li>
 <%end%></p>
